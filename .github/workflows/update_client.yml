@@ -1,0 +1,15 @@
+name: Notify on Client Update
+
+on:
+  workflow_dispatch:
+    inputs:
+      client_name:
+        description: 'Nombre del cliente actualizado'
+        required: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send notification
+        run: echo "Cliente actualizado: ${{ github.event.inputs.client_name }}"

@@ -1,0 +1,15 @@
+name: Notify on Client Consult
+
+on:
+  workflow_dispatch:
+    inputs:
+      client_name:
+        description: 'Nombre del cliente consultado'
+        required: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send notification
+        run: echo "Cliente consultado: ${{ github.event.inputs.client_name }}"
