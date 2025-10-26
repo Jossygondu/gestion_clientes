@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send notification
-        run: echo "Cliente actualizado: ${{ github.event.inputs.client_name }}"
+        run: "echo Cliente actualizado: ${{ github.event.inputs.client_name }}"
