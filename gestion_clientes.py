@@ -158,4 +158,8 @@ while True:
     else:
         print("Opción inválida.")
 
+<<<<<<< HEAD
 # todo esta excelente, gracias
+=======
+#todo esta excelente gracias
+>>>>>>> d94d5743cf06ebd724c83f685cafb821724c2264
